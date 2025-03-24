@@ -1,0 +1,23 @@
+--cpu ARM7TDMI
+".\objects\main.o"
+".\objects\drv_leds.o"
+".\objects\drv_tiempo.o"
+".\objects\drv_consumo.o"
+".\objects\drv_monitor.o"
+".\objects\rt_fifo.o"
+".\objects\rt_ge.o"
+".\objects\svc_alarma.o"
+".\objects\drv_botones.o"
+".\objects\random.o"
+".\objects\simon.o"
+".\objects\hal_tiempo_lpc.o"
+".\objects\hal_gpio_lpc.o"
+".\objects\hal_consumo_lpc.o"
+".\objects\hal_ext_int_lpc.o"
+".\objects\hal_wdt_lpc.o"
+".\objects\hal_concurrencia_lpc.o"
+".\objects\startup.o"
+--strict --scatter ".\Objects\blink_lpc.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\blink_lpc.map" -o .\Objects\blink_lpc.axf

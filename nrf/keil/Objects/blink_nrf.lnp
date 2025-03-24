@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp
+".\objects\main.o"
+".\objects\drv_leds.o"
+".\objects\drv_tiempo.o"
+".\objects\drv_consumo.o"
+".\objects\drv_monitor.o"
+".\objects\rt_fifo.o"
+".\objects\svc_alarma.o"
+".\objects\rt_ge.o"
+".\objects\drv_botones.o"
+".\objects\random.o"
+".\objects\simon.o"
+".\objects\hal_gpio_nrf.o"
+".\objects\hal_tiempo_nrf.o"
+".\objects\hal_consumo_nrf.o"
+".\objects\hal_ext_int_nrf.o"
+".\objects\hal_wdt_nrf.o"
+".\objects\hal_concurrencia_nrf.o"
+".\objects\arm_startup_nrf52840.o"
+".\objects\system_nrf52.o"
+--library_type=microlib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\blink_nrf.map" -o .\Objects\blink_nrf.axf

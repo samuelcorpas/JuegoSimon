@@ -1,0 +1,101 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: UZ UZ, UZ, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.26.2.0
+Toolchain Path:  C:\Programas-Practicas\Simuladores\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.31.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+D:\ph_practica5_ultima_ver\blink_v2_lpc_resuelto\nrf\keil\blink_nrf.uvprojx
+Project File Date:  12/12/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Programas-Practicas\Simuladores\Keil\ARM\ARMCC\Bin'
+Rebuild Project 'blink_nrf' - Target 'nRF_Release'
+compiling main.c...
+compiling drv_leds.c...
+compiling drv_tiempo.c...
+compiling drv_consumo.c...
+compiling drv_monitor.c...
+compiling rt_fifo.c...
+compiling rt_GE.c...
+compiling svc_alarma.c...
+D:\ph_practica5_ultima_ver\blink_v2_lpc_resuelto\src\svc_alarma.c(94): warning:  #188-D: enumerated type mixed with another type
+              alarmas[i].ID_evento = ID_evento;
+..\..\src\svc_alarma.c: 1 warning, 0 errors
+compiling drv_botones.c...
+compiling simon.c...
+compiling random.c...
+D:\ph_practica5_ultima_ver\blink_v2_lpc_resuelto\src\random.c(16): warning:  #61-D: integer operation result is out of range
+      seed = (1103515245 * seed + 12345) % (1 << 31);  // Generador congruencial lineal (LCG)
+D:\ph_practica5_ultima_ver\blink_v2_lpc_resuelto\src\random.c(16): warning:  #68-D: integer conversion resulted in a change of sign
+      seed = (1103515245 * seed + 12345) % (1 << 31);  // Generador congruencial lineal (LCG)
+..\..\src\random.c: 2 warnings, 0 errors
+compiling hal_tiempo_nrf.c...
+compiling hal_gpio_nrf.c...
+compiling hal_consumo_nrf.c...
+compiling hal_concurrencia_nrf.c...
+D:\ph_practica5_ultima_ver\blink_v2_lpc_resuelto\nrf\src_nrf\hal_concurrencia_nrf.c(26): warning:  #1-D: last line of file ends without a newline
+  }
+D:\ph_practica5_ultima_ver\blink_v2_lpc_resuelto\nrf\src_nrf\hal_concurrencia_nrf.c(7): warning:  #177-D: variable "cpsr"  was declared but never referenced
+  static uint32_t cpsr;
+..\src_nrf\hal_concurrencia_nrf.c: 2 warnings, 0 errors
+assembling arm_startup_nrf52840.s...
+compiling hal_ext_int_nrf.c...
+D:\ph_practica5_ultima_ver\blink_v2_lpc_resuelto\nrf\src_nrf\hal_ext_int_nrf.c(132): warning:  #1-D: last line of file ends without a newline
+  }
+..\src_nrf\hal_ext_int_nrf.c: 1 warning, 0 errors
+compiling hal_WDT_nrf.c...
+compiling system_nrf52.c...
+linking...
+Program Size: Code=5608 RO-data=556 RW-data=128 ZI-data=18016  
+FromELF: creating hex file...
+".\Objects\blink_nrf.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.44.1.pack
+                NordicSemiconductor.nRF_DeviceFamilyPack.8.44.1
+                Nordic Semiconductor nRF ARM devices Device Family Pack with BSD license.
+   * Component: Startup Version: 8.44.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_nRF_Release
+  C:\Programas-Practicas\Simuladores\Keil\ARM\PACK\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Programas-Practicas\Simuladores\Keil\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.44.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.44.1
+      Source file:   Device\Source\arm\arm_startup_nrf52840.s
+      Include file:  Device\Include\system_nrf.h
+      Source file:   Device\Source\system_nrf52.c
+      Include file:  Device\Include\system_nrf52840.h
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
