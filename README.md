@@ -28,10 +28,9 @@ Compila y sube el código al microcontrolador utilizando el entorno de desarroll
 
 Enciende el dispositivo y sigue las instrucciones del juego.
 
-📂 Estructura del proyecto
-plaintext
-Copiar
-Editar
+---
+
+## 📂 Estructura del proyecto
 .
 ├── src/                 # Código fuente del juego
 ├── lpc/                 # Archivos específicos para LPC
@@ -42,7 +41,9 @@ Editar
 ├── LICENSE              # Licencia MIT
 ├── README.md            # Este archivo
 
-✨ Notas adicionales
+---
+
+## ✨ Notas adicionales
 El código es modular y puede adaptarse a diferentes microcontroladores.
 
 Se recomienda probar el juego en un simulador antes de cargarlo en hardware real.
