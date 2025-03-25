@@ -33,7 +33,6 @@ Enciende el dispositivo y sigue las instrucciones del juego.
 ## 📂 Estructura del proyecto
 
 ```plaintext
-
 .
 ├── src/                 # Código fuente del juego
 ├── lpc/                 # Archivos específicos para LPC
