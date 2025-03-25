@@ -10,14 +10,13 @@ Este proyecto implementa el juego de Simón utilizando hardware embebido. El jug
 ✅ LED y pulsadores
 ✅ Plataforma de desarrollo: Keil uVision
 
-📜 Instalación y Uso
-Clona este repositorio:
+## 📜 Instalación y Uso  
+Clona este repositorio:  
 
-bash
-Copiar
-Editar
+```bash
 git clone https://github.com/tu-usuario/JuegoSimon.git
 cd JuegoSimon
+```
 Compila y sube el código al microcontrolador.
 
 Enciende el dispositivo y sigue las instrucciones del juego.
