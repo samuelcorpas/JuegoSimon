@@ -31,6 +31,9 @@ Enciende el dispositivo y sigue las instrucciones del juego.
 ---
 
 ## 📂 Estructura del proyecto
+
+```plaintext
+
 .
 ├── src/                 # Código fuente del juego
 ├── lpc/                 # Archivos específicos para LPC
@@ -40,6 +43,7 @@ Enciende el dispositivo y sigue las instrucciones del juego.
 │   ├── anexos.pdf       
 ├── LICENSE              # Licencia MIT
 ├── README.md            # Este archivo
+```
 
 ---
 
