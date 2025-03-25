@@ -50,3 +50,8 @@ Enciende el dispositivo y sigue las instrucciones del juego.
 El código es modular y puede adaptarse a diferentes microcontroladores.
 
 Se recomienda probar el juego en un simulador antes de cargarlo en hardware real.
+
+---
+
+## Licencia
+Este proyecto usa licencia MIT.
